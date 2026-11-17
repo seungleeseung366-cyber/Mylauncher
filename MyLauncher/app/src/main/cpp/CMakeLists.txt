@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.22)
+project(launcher_native C)
+add_library(launcher_native SHARED launcher_native.c)
+find_library(log-lib log)
+find_library(android-lib android)
+target_link_libraries(launcher_native ${log-lib} ${android-lib} dl)

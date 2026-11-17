@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical" android:padding="20dp">
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="MyLauncher" android:textSize="24sp" android:textStyle="bold" />
+
+    <EditText android:id="@+id/editUser" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:hint="Username (offline)"
+        android:inputType="text" android:layout_marginTop="12dp" />
+
+    <EditText android:id="@+id/editRam" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:hint="RAM (MB), mis. 1024"
+        android:inputType="number" />
+
+    <Spinner android:id="@+id/spinnerRenderer" android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Spinner android:id="@+id/spinnerVersion" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginTop="12dp" />
+
+    <Button android:id="@+id/btnDownload" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="Download versi" />
+
+    <Button android:id="@+id/btnPlay" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="Main" />
+
+    <ProgressBar android:id="@+id/progress" style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="12dp" />
+
+    <TextView android:id="@+id/txtStatus" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginTop="8dp"
+        android:text="Memuat daftar versi..." />
+</LinearLayout>
+</ScrollView>
